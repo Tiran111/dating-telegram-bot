@@ -118,7 +118,8 @@ def search_users(gender=None, city=None, age_min=18, age_max=100):
         
         query += ' AND age BETWEEN ? AND ?'
         params.extend([age_min, age_max])
-        
+   database.py
+
         cursor.execute(query, params)
         return cursor.fetchall()
 
